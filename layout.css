@@ -10,8 +10,9 @@
 :root {
     --boxshadow: hsl(240, 22%, 28%);
 }
+
 body{
-    background: white;
+    background: brown;
 }
 
 .wrapper {
@@ -19,8 +20,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 750px;
-    height: 600px;
+    width: 800px;
+    height: 700px;
     display: flex;
     box-shadow: 20px 20px 10px var(--boxshadow) ;
 }
@@ -52,11 +53,12 @@ body{
     font-size: 12px;
 }
 
+
 .wrapper .right {
     width: 70%;
     background: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     padding: 30px 35px
 }
 
@@ -67,7 +69,7 @@ body{
 
 .wrapper .right .myprofile h2,
 .wrapper .right .auther h2{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid purple;
     text-transform: uppercase;
@@ -75,25 +77,76 @@ body{
 }
 
 .wrapper .right .information, .wrapper .right .auther{
-    display: flex;
+    display: grid;
     justify-content: space-between;
 }
 
 .wrapper .right .information .data h4,
 .wrapper .right .auther .data h4{
     margin-bottom: 5px;
+
 }
 
 .wrapper .right .information .data p,
 .wrapper .right .auther .data p{
     margin-bottom: 5px;
-    color: darkgray;
+}
+
+.wrapper .right .information .data{
+    width: 200px;
+    float: left;
+    height: 100;
+}
+
+.wrapper .right .information .data h4{
+    padding-bottom: 10px;
 }
 
 .wrapper .right .information .data p{
     width: fit-content;
-    background-color: gray;
-    padding: 20px;
-    font-size: x-small;
+    background: lightgray;
+    text-align: center;
+    padding: 15px;
+    font-size: smaller;
 }
 
+
+.wrapper .right .cont1{
+    object-fit: fill;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.wrapper .right .cont1 .data{
+    padding: 20px;
+}
+
+.wrapper .right .cont2{
+    object-fit: fill;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.wrapper .right .cont2 .data{
+    padding: 20px;
+}
+
+.wrapper .right .cont3{
+    object-fit: fill;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.wrapper .right .cont3 .data{
+    padding: 20px;
+}
+
+.wrapper .right .cont3 .data p{
+    background: lightgray;
+    width: fit-content;
+}
+
+.wrapper .right .authdata1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
